@@ -3,7 +3,7 @@
 #!icon=https://photo.16pic.com/00/04/35/16pic_435715_b.jpg
 
 [Script]
-http-response ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js, requires-body=true, timeout=60
+http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js, requires-body=true, timeout=60
 http-request ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js, requires-body=true,timeout=60
 http-request ^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js, requires-body=true, timeout=60
 
