@@ -6,4 +6,4 @@
 hostname = notability.com
 
 [Script]
-http-response,script-path=
+http-response ^https?:\/\/notability\.com\/global script-path= https://raw.githubusercontent.com/xiaozhizz/loon/refs/heads/main/notability.js, requires-body=true, timeout=60, tag=notability
