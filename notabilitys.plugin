@@ -1,1 +1,9 @@
-s
+#!name=notability
+#!icon=https://photo.16pic.com/00/04/35/16pic_435715_b.jpg
+
+
+[mitm]
+hostname = notability.com
+
+[Script]
+http-response,script-path=
