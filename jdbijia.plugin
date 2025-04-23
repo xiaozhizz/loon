@@ -8,7 +8,7 @@ arguments= [参数设置]\nJD_UNION_ID: 填写京东联盟ID\n   ├ 获取方�
 
 
 
-cookieScriptEnable = awitch,true,tag=是否启用获取cookie的脚本
+arg2 = awitch,true,tag=是否启用获取cookie的脚本
 
 arg3 = switch,true,tag=获取token
 
@@ -20,6 +20,6 @@ arg4 = switch,flase,tag=折线版
 hostname=in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, lite-in.m.jd.com
 [Script]
 
-http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,timeout=60, tag=京东cookie, enable={cookieScriptEnable}
+http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,timeout=60, tag=京东cookie, enable={arg2}
 http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu script-path=https://raw.githubusercontent.com/githubdulong/Script/master/MmmCK.js,requires-body=true, timeout=60, tag=慢慢买获取token, enable={arg3}
 http-response ^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js, tag=京东比价折线版, requires-body=true, timeout=30, enable={arg4}
