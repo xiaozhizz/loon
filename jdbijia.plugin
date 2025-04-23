@@ -12,7 +12,7 @@ arg2 = awitch,true,tag=是否启用获取cookie的脚本
 
 arg3 = switch,true,tag=获取token
 
-arg4 = switch,flase,tag=折线版
+arg4 = switch,true,tag=折线版
 
 
 [MITM]
