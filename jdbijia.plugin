@@ -8,7 +8,7 @@ arguments= [参数设置]\nJD_UNION_ID: 填写京东联盟ID\n   ├ 获取方�
 
 
 
-arg2 = awitch,true,tag=是否启用获取cookie的脚本
+arg2 = switch,true,tag=获取cookie的脚本
 
 arg3 = switch,true,tag=获取token
 
