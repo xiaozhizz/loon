@@ -4,7 +4,7 @@
 
 
 [Argument]
-arg1 = switch, true, 
+arg1 = switch, true, tag=脚本是否启动
 
 [Script]
 
