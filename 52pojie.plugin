@@ -16,7 +16,7 @@
 
 [Argument]
 appName = input,"吾爱论坛"
-cron = input,"0 9 * * *"
+cron = input,"0 9 * * *",tag=定时任务时间,desc=定时任务的cron表达式
 arg = switch,true,tag=cookie
 
 [Script]
