@@ -1,6 +1,6 @@
 #!name=京东比价
 #!desc=京东助手，默认开启，请点开插件自己关多余脚本
-#!loon_version = 3.2.1(734)
+#!loon_version = 3.3.0(853)
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
 
 [Argument]
