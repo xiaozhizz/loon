@@ -10,14 +10,19 @@
 # ================ Boxjs订阅 ================
 # 订阅地址：https://raw.githubusercontent.com/ClydeTime/BiliBili/main/boxjs/BiliBili.boxjs.json
 # 更新时间：2023-06-02
+[Argument]
+arg1 = switch, true, tag=软件版cookie
+arg2 = switch, flase, tag=网页版cookie
+cron = input,"30 8 * * *",tag=定时任务时间,desc=定时任务的cron表达式
+
 
 [Script]
 # BiliBili每日等级任务
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站每日等级任务
 
-http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),argument={arg1}
 
-http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页)
+http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页), argument={arg2}
 
 [MITM]
 hostname = app.bilibili.com, m.bilibili.com
