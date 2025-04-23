@@ -2,7 +2,8 @@
 #!author = 𝐎𝐍𝐙𝟑𝐕
 #!icon=https://photo.16pic.com/00/04/35/16pic_435715_b.jpg
 #!loon_version = 3.3.0(853)
-#!desc = 手动登录 https://www.52pojie.cn/home.php 如通知成功获取cookie, 则可以使用此签到脚本.获取Cookie后, 请将Cookie脚本禁用并移除主机名, 以免产生不必要的MITM.脚本将在每天上午9点执行, 您可以修改执行时间.
+#!desc = 手动登录 https://www.52pojie.cn/home.php 如通知成功获取cookie, 则可以使用此签到脚本.获取Cookie后, 请将Cookie脚本禁用并移除主机名, 以免产生不必要的MITM.脚本将在每天上午9点执行, 您可以修改执行时间.boxjs地址：https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/boxjs.json
+
 
 [Argument]
 appName = input,"吾爱论坛",tag=软件的名字
