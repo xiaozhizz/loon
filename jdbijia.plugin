@@ -4,7 +4,7 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
 
 [Argument]
-JD_UNION_IDScriptEnable = switch,true,tag=写京东联盟ID\n   ├ 获取方式：登录京东联盟官网https://union.jd.com/index\n   └ 参考格式：12345678\n
+argument="jd_union_id={{{JD_UNION_ID}}}&jd_position_id={{{JD_POSITION_ID}}}&jtt_appid={{{JTT_APPID}}}&jtt_appkey={{{JTT_APPKEY}}}&engine={{{ENGINE}}}&timeout={{{TIMEOUT}}}&disable_notice={{{DISABLE_NOTICE}}}&theme_time={{{THEME_TIME}}}
 
 arg1 = switch,true,tag=京东助手
 
