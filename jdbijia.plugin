@@ -7,7 +7,7 @@
 [Argument]
 arg1 = switch,true,tag=获取token
 arg2 = switch,true,tag=京东比价折线版
-arg3 = switch,true,tag=京东比价表格版
+arg3 = switch,false,tag=京东比价表格版
 
 [MITM]
 hostname=in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com
