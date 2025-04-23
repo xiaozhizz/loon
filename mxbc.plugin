@@ -1,9 +1,9 @@
-#!name = 蜜雪冰城签到
-#!homepage = https://t.me/major_study
-#!author = @Sliverkiss
-#!desc = 打开蜜雪冰城小程序，进入我的页面.获取cookie后请关闭cookie脚本
+#!name= 蜜雪冰城签到
+#!homepage= https://t.me/major_study
+#!author= @Sliverkiss
+#!desc= 打开蜜雪冰城小程序，进入我的页面.获取cookie后请关闭cookie脚本
 #!icon=https://photo.16pic.com/00/04/35/16pic_435715_b.jpg
-#!loon_version = 3.3.0(853)
+#!loon_version= 3.3.0(853)
 
 [Argument]
 
