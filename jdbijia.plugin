@@ -1,5 +1,5 @@
 #!name=京东比价
-#!desc=京东助手
+#!desc=京东助手，请点开插件填写信息
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
 
 [Argument]
