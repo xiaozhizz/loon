@@ -16,7 +16,7 @@ arg4 = input,"JTT_APPKEY",tag= 填写京推推AppKey,获取方式:登录京推�
 
 arg5 = input,"TIMEOUT",tag= 脚本超时（单位：秒）,120：脚本超时（默认值）
 
-arg6 = input,"DISABLE_NOTICE",tag=是否显示通知转链,默认true
+arg6 = switch,true,false,tag=是否显示通知转链,默认true
 
 arg7 = inpu,"THEME_TIME",tag= 自定义暗黑模式时间范围,起始小时-结束小时（默认 7~19为明亮模式),6-22 表示每天 22:00~6:00 为暗黑模式时间段
 
