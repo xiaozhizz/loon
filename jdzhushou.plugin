@@ -27,6 +27,6 @@ arg8 = switch,true,tag=获取cookie的脚本
 hostname=in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, lite-in.m.jd.com
 
 [Script]
-http-response ^https:\/\/in\.m\.jd\.com\/product\/.+?\.html script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js, requires-body=true, timeout=60, tag=京东助手, argument=[jd_union_id={arg1}&jd_position_id={arg2}&jtt_appid={arg3}&jtt_appkey={arg4}&timeout={arg5}&disable_notice={arg6}&theme_time={arg7}]
+http-response ^https:\/\/in\.m\.jd\.com\/product\/.+?\.html script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js, requires-body=true, timeout=60, tag=京东助手, argument=[{arg1},{arg2},{arg3},{arg4},{arg5},{arg6},{arg7}]
 
 http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,timeout=60, tag=京东cookie, enable={arg8}
