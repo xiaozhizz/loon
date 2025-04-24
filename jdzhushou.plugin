@@ -4,22 +4,21 @@
 #!loon_version = 3.3.0(853)
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
 
-[Argument]
-JD_UNION_ID = JD_UNION_ID = null, tag=京东联盟ID, desc=填写京东联盟ID（例：12345678
+#!argument JD_UNION_ID = null, tag=京东联盟ID, desc=填写京东联盟ID（例：12345678
 
-JD_POSITION_ID = null, tag=推广位ID, desc=填写京东联盟推广位ID（例：1234567890）
+#!argument JD_POSITION_ID = null, tag=推广位ID, desc=填写京东联盟推广位ID（例：1234567890）
 
-JTT_APPID = null, tag=京推推AppID, desc=填写京推推AppID（例：1234567890123456）
+#!argument JTT_APPID = null, tag=京推推AppID, desc=填写京推推AppID（例：1234567890123456）
 
-JTT_APPKEY = null, tag=京推推AppKey, desc=填写京推推AppKey（例：b123456ce90123456lk890126789012）
+#!argument JTT_APPKEY = null, tag=京推推AppKey, desc=填写京推推AppKey（例：b123456ce90123456lk890126789012）
 
-ENGINE = auto, tag=脚本引擎, desc=auto:自动 / jsc:JavaScriptCore / webview:WebView
+#!argument ENGINE = auto, tag=脚本引擎, desc=auto:自动 / jsc:JavaScriptCore / webview:WebView
 
-MMMCK_SCRIPT = 慢慢买CK, tag=慢慢买启用标志, desc=默认启用，如需关闭请填入 "#"
+#!argument MMMCK_SCRIPT = 慢慢买CK, tag=慢慢买启用标志, desc=默认启用，如需关闭请填入 "#"
 
-DISABLE_NOTICE = true, tag=启用返利与通知, desc=true:启用返利转链通知 / false:只显示比价
+#!argument DISABLE_NOTICE = true, tag=启用返利与通知, desc=true:启用返利转链通知 / false:只显示比价
 
-THEME_TIME = 7-19, tag=暗黑模式时间, desc=格式：起始小时-结束小时，如 6-22 表示每天 22:00~6:00 为暗黑模式
+#!argument THEME_TIME = 7-19, tag=暗黑模式时间, desc=格式：起始小时-结束小时，如 6-22 表示每天 22:00~6:00 为暗黑模式
 
 arg1 = switch,true,tag=获取cookie的脚本
 
