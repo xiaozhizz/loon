@@ -4,6 +4,8 @@
 #!loon_version = 3.3.0(853)
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
 
+[Argument]
+
 #!argument JD_UNION_ID = null, tag=京东联盟ID, desc=填写京东联盟ID（例：12345678
 
 #!argument JD_POSITION_ID = null, tag=推广位ID, desc=填写京东联盟推广位ID（例：1234567890）
