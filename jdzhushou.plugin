@@ -6,20 +6,19 @@
 
 [Argument]
 
-arg1 = input,"JD_UNION_ID",tag= 填写京东联盟ID,desc= 获取方式:登录京东联盟官网
+arg1 = input,"JD_UNION_ID",tag= 填写京东联盟ID,获取方式:登录京东联盟官网
 
-arg2 = input,"JD_POSITION_ID",tag= 填写推广位ID,desc= 获取方式:在京东联盟后台创建推广位
+arg2 = input,"JD_POSITION_ID",tag= 填写推广位ID,获取方式:在京东联盟后台创建推广位
 
-arg3 = input,"JTT_APPID",tag= 填写京推推AppID,desc= 获取方式:登录京推推官网
+arg3 = input,"JTT_APPID",tag= 填写京推推AppID,获取方式:登录京推推官网
 
-arg4 = input,"JTT_APPKEY",tag= 填写京推推AppKey,desc= 获取方式:登录京推推官网
+arg4 = input,"JTT_APPKEY",tag= 填写京推推AppKey,获取方式:登录京推推官网
 
+arg5 = input,"TIMEOUT",tag= 脚本超时（单位：秒）,120：脚本超时（默认值）
 
-arg5 = input,"TIMEOUT",tag= 脚本超时（单位：秒）,desc= 120：脚本超时（默认值）
+arg6 = input,"DISABLE_NOTICE",tag=是否显示通知转链,默认true
 
-arg6 = input,"DISABLE_NOTICE",tag=是否显示通知转链,desc=默认true
-
-arg7 = inpu,"THEME_TIME",tag= 自定义暗黑模式时间范围,desc= 起始小时-结束小时（默认 7~19为明亮模式),6-22 表示每天 22:00~6:00 为暗黑模式时间段
+arg7 = inpu,"THEME_TIME",tag= 自定义暗黑模式时间范围,起始小时-结束小时（默认 7~19为明亮模式),6-22 表示每天 22:00~6:00 为暗黑模式时间段
 
 arg8 = switch,true,tag=获取cookie的脚本
 
