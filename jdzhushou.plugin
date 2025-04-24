@@ -22,6 +22,13 @@ theme_time = inpu,"THEME_TIME",tag= 自定义暗黑模式时间范围,起始小�
 
 arg1 = switch,true,tag=获取cookie的脚本
 
+arg2 = switch,true,tag=获取token
+
+arg3 = switch,true,tag=折线版
+
+arg4 = switch,false,tag=折线不展示表格
+
+
 [MITM]
 
 hostname=in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, lite-in.m.jd.com
