@@ -6,23 +6,23 @@
 
 [Argument]
 
-#!argument JD_UNION_ID = null, tag=京东联盟ID, desc=填写京东联盟ID（例：12345678
+arg1 = input,"JD_UNION_ID",tag= 填写京东联盟ID,desc= 获取方式:登录京东联盟官网
 
-#!argument JD_POSITION_ID = null, tag=推广位ID, desc=填写京东联盟推广位ID（例：1234567890）
+arg2 = input,"JD_POSITION_ID",tag= 填写推广位ID,desc= 获取方式:在京东联盟后台创建推广位
 
-#!argument JTT_APPID = null, tag=京推推AppID, desc=填写京推推AppID（例：1234567890123456）
+arg3 = input,"JTT_APPID",tag= 填写京推推AppID,desc= 获取方式:登录京推推官网
 
-#!argument JTT_APPKEY = null, tag=京推推AppKey, desc=填写京推推AppKey（例：b123456ce90123456lk890126789012）
+arg4 = input,"JTT_APPKEY",tag= 填写京推推AppKey,desc= 获取方式:登录京推推官网
 
-#!argument ENGINE = auto, tag=脚本引擎, desc=auto:自动 / jsc:JavaScriptCore / webview:WebView
+arg5 = input,"ENGINE",tag= 脚本执行引擎,desc=自动选择jsc：JavaScriptCore 引擎
 
-#!argument MMMCK_SCRIPT = 慢慢买CK, tag=慢慢买启用标志, desc=默认启用，如需关闭请填入 "#"
+arg6 = input,"TIMEOUT",tag= 脚本超时（单位：秒）,desc= 120：脚本超时（默认值）
 
-#!argument DISABLE_NOTICE = true, tag=启用返利与通知, desc=true:启用返利转链通知 / false:只显示比价
+arg7 = input,"DISABLE_NOTICE",tag=是否显示通知转链,desc=默认true
 
-#!argument THEME_TIME = 7-19, tag=暗黑模式时间, desc=格式：起始小时-结束小时，如 6-22 表示每天 22:00~6:00 为暗黑模式
+arg8 = inpu,"THEME_TIME",tag= 自定义暗黑模式时间范围,desc= 起始小时-结束小时（默认 7~19为明亮模式),6-22 表示每天 22:00~6:00 为暗黑模式时间段
 
-arg1 = switch,true,tag=获取cookie的脚本
+arg10 = switch,true,tag=获取cookie的脚本
 
 [MITM]
 
@@ -30,4 +30,4 @@ hostname=in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, lite-in.m.jd.com
 [Script]
 http-response ^https:\/\/in\.m\.jd\.com\/product\/.+?\.html script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js, requires-body=true, timeout=60, tag=京东助手, argument=[{JD_UNION_ID},{JD_POSITION_ID},{JTT_APPID},{JTT_APPKEY},{ENGINE},{DISABLE_NOTICE},{THEME_TIME}]
 
-http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,timeout=60, tag=京东cookie, enable={arg1}
+http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,timeout=60, tag=京东cookie, enable={arg10}
