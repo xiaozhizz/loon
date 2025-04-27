@@ -7,7 +7,7 @@
 
 [Argument]
 
-arg1 = switch,true,tag=cookie开关
+arg1 = switch,true,false,tag=cookie开关
 cron = input,"5 10 * * *",tag=定时任务时间,desc=定时任务的cron表达式
 
 [script]
