@@ -8,7 +8,7 @@
 [Argument]
 appName = input,"吾爱论坛",tag=软件的名字
 cron = input,"0 9 * * *",tag=定时任务时间,desc=定时任务的cron表达式
-arg = switch,true,tag=cookie
+arg1 = switch,true,tag=cookie
 
 [Script]
 http-request ^https:\/\/www\.52pojie\.cn\/home\.php\? tag=吾爱破解获取Cookie, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js,enable={arg1}
