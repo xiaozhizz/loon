@@ -1,8 +1,8 @@
 
 // 将username的值填写为你的恩山账号;
-const username = "yourUsername",argument={arg1};
+const username = "yourUsername";
 // 将双引号内的password改为恩山账号的密码;
-const password = "yourPassword",argument={arg2};
+const password = "yourPassword";
 
 
 const $ = Env("🧩恩山论坛");
