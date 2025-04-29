@@ -4,26 +4,7 @@ const username = "yourUsername";
 // 将双引号内的password改为恩山账号的密码;
 const password = "yourPassword";
 
-
 const $ = Env("🧩恩山论坛");
-// 获取模块或插件传入参数
-let args = "";
-if (typeof $argument === "string") {
-  args = $argument;
-} else if (typeof $argument === "object" && $argument !== null) {
-  args = Object.entries($argument)
-    .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
-    .join("&");
-}
-$.log(`读取参数: ${args}`);
-const argObj = Object.fromEntries(
-args.split("&").map(item => item.split("=").map(decodeURIComponent))
-);
-const isEmpty = (val) => !val || val === "null";
-$.opts = { 'open-url': 'https://www.right.com.cn/forum/', 'media-url': 'https://www.right.com.cn/forum/static/image/mobile/images/logo.png'};
-var hexcase = 0;
-var chrsz = 8;
-
 !(async () => {
     await check_in();
 })()
