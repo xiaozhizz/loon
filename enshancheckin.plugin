@@ -6,8 +6,8 @@
 #!desc= 填好自己的帐号密码
 
 [Argument]
-arg1 = input,"yourUsername",tag=恩山论坛帐号
-arg2 = input,"yourPassword",tag=恩山论坛密码
+username = input,"yourUsername",tag=恩山论坛帐号
+userword = input,"yourPassword",tag=恩山论坛密码
 cron = input,"0 13 * * *",tag=自定义时间戳"
 
 [Script]
