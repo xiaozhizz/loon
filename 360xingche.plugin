@@ -1,3 +1,13 @@
 #!name= 360行车助手去广告
 #!author= @🔔🐈
 #!loon_version= 3.3.0(855)
+#!icon=https://photo.16pic.com/00/04/35/16pic_435715_b.jpg
+#!desc= 框框我去不了，暂时就这样吧，视频流想起来再去掉
+
+[MITM]
+*.che.360.cn
+
+[Rewrite]
+^https?:\/\/iot\.che\.360\.cn\/static\/config\/services\/services\.json\? reject-dict
+^https?:\/\/iot\.che\.360\.cn\/static\/config\/home\/app_home\.json\? reject-dict
+^https?:\/\/api\.che\.360\.cn\/share_publics\/index_nav\? reject-dict
