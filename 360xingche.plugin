@@ -5,7 +5,7 @@
 #!desc= 就这样吧
 
 [Rule]
-DOMAIN,api.che.360.cn,REJECT
+DOMAIN,api.che.360.cn,REJECT-VIDEO
 
 [MITM]
 hostname= *.che.360.cn
