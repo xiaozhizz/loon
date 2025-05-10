@@ -5,7 +5,7 @@
 #!desc= 框框我去不了，暂时就这样吧，视频流想起来再去掉
 
 [MITM]
-*.che.360.cn
+hostname = *.che.360.cn
 
 [Rewrite]
 ^https?:\/\/iot\.che\.360\.cn\/static\/config\/services\/services\.json\? reject-dict
