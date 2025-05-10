@@ -2,7 +2,10 @@
 #!author= @🔔🐈
 #!loon_version= 3.3.0(855)
 #!icon=https://photo.16pic.com/00/04/35/16pic_435715_b.jpg
-#!desc= 框框我去不了，暂时就这样吧，视频流想起来再去掉
+#!desc= 就这样吧
+
+[Rule]
+DOMAIN,*.che.360.cn,REJECT
 
 [MITM]
 hostname= *.che.360.cn
