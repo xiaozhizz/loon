@@ -1,13 +1,13 @@
 #!name= 必应随机壁纸
 #!loon_version = 3.3.1(855)
 #!author= @🔔🐈
-#!desc= 👇
+#!desc= 🔓
 #!homepage= https://t.me/Loon0x00
-
+#!icon=https://gitlab.com/Nessk/Ness/-/raw/main/icon/zs/zs01.png
 
 [Argument]
 
-arg1 = input,"30 * * * *",tag=时间正则
+arg1 = input,"30 10/20 * * *"tag=时间正则
 
 [Script]
 cron {arg1} script-path=https://raw.githubusercontent.com/xiaozhizz/loon/refs/heads/main/suijibizhi.js,timeout=60,tag=🛸
