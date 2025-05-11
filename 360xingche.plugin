@@ -1,8 +1,9 @@
 #!name= 360行车助手去广告
 #!author= @🔔🐈
-#!loon_version= 3.3.0(855)
 #!icon=https://photo.16pic.com/00/04/35/16pic_435715_b.jpg
 #!desc= 就这样吧
+#!loon_version= 3.3.0(855)
+
 
 [Rule]
 DOMAIN,api.che.360.cn,REJECT-VIDEO
