@@ -1,4 +1,4 @@
-#!name = 收集的脚本
+#!name = 闲余
 #!desc = https://t.me/Loon0x00
 #!icon=https://photo.16pic.com/00/04/35/16pic_435715_b.jpg
 #!loon_version = 3.3.0(853)
@@ -10,3 +10,9 @@ arg1 = switch, true, tag=脚本是否启动
 [Script]
 
 cron "0 12 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, timeout=300, tag=汇率监控, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_3.png,enable={arg1}
+
+
+[Rewrite]
+
+//安徽电信小程序
+^https:\/\/wx\.ah\.189\.cn\/wxws\/xcxahwx\/news\/userList\.do reject-dict
