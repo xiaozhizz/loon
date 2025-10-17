@@ -6,6 +6,5 @@
 hostname = *.kugou.com
 
 [Script]
-cron=10 0 * * *,script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_vip.js
-http-request=https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/activity/get_month_vip_record.*,requires-body=0,script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_cookie.js
-http-response=(https?:\/\/)?.*\.kugou\.com\/(v1\/(get_union_vip|vipuser_sub|get_res_privilege)|mobile\/vipinfo|kugouvip\/v[12]\/batch_union_vipinfo),requires-body=1,max-size=0,binary-body-mode=0,script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_ad.js
+cron "10 0 * * *" script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_vip.js8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_vip.js, timeout=10, tag=签到 
+http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/activity/get_month_vip_record.*,timeout=10,tag=cookie,script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_cookie.js
