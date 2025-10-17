@@ -6,5 +6,5 @@
 hostname = *.kugou.com
 
 [Script]
-cron "10 0 * * *" script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_vip.js8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_vip.js, timeout=10, tag=签到 
+cron "10 0 * * *" script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_vip.js, timeout=10, tag=签到 
 http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/activity/get_month_vip_record.*,timeout=10,tag=cookie,script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_cookie.js
