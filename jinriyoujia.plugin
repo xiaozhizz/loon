@@ -7,7 +7,7 @@
 
 [Argument]
 
-provname = "自己更改",tag=地区设定
+provname = input,"自己更改",tag=地区设定
 
 cron = input,"30 12 * * *",tag=时间正则
 
