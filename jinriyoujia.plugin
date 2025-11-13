@@ -7,7 +7,7 @@
 
 [Argument]
 
-provname = input,"",地区参数
+provname = input,"",tag=地区参数
 
 cron = input,"30 12 * * *",tag=时间正则
 
