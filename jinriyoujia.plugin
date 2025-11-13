@@ -7,10 +7,10 @@
 
 [Argument]
 
-provname = input,"",tag=地区参数
+江苏 = input,"",tag=地区参数
 
 cron = input,"30 12 * * *",tag=时间正则
 
 [Script]
 
-cron "30 12 * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js, timeout=10, tag=油价提醒, argument=[{provname}],enable=true
+cron "30 12 * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js, timeout=10, tag=油价提醒, argument="江苏"
