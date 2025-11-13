@@ -7,10 +7,10 @@
 
 [Argument]
 
-provname = input,"地区设定"
+provname = input,"",地区参数
 
 cron = input,"30 12 * * *",tag=时间正则
 
 [Script]
 
-cron "自己设置" script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js, timeout=10, tag=油价提醒, argument=provname,
+cron "* * * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js, timeout=10, tag=油价提醒, argument=provname,
