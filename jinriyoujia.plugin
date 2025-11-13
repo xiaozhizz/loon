@@ -1,13 +1,12 @@
 #!name= 今日油价
 #!loon_version = 3.3.0(853)
 #!author= @🔔🐈
-#!desc= 🔓
 #!homepage= https://whatshub.top/plugin/oil.plugin
 #!icon=https://gitlab.com/Nessk/Ness/-/raw/main/icon/zs/zs01.png
 
 [Argument]
 
-provname = input,"自己更改",tag=地区设定
+provname = input,"地区设定"
 
 cron = input,"30 12 * * *",tag=时间正则
 
