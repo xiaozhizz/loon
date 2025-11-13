@@ -1,4 +1,5 @@
 #!name= 今日油价
+#!desc=会自动运行参数
 #!loon_version = 3.3.0(853)
 #!author= @🔔🐈
 #!homepage= https://whatshub.top/plugin/oil.plugin
